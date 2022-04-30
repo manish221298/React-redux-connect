@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
+  console.log("props", props)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>userId:-{props.data.data.userId}</h1>
+    <h1>id:-{props.data.data.id}</h1>
+      <h1>title:-{props.data.data.title}</h1>
+      <h1>React app</h1>
     </div>
   );
 }
